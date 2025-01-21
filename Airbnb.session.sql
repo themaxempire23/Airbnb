@@ -156,6 +156,15 @@ FROM Bookings
 INNER JOIN Users ON Users.id = guest_id
 WHERE room_id = 2; --(filtering)join users for room 2
 
+-- no work
+
+-- @bock
+create table Users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    bio TEXT, 
+    country VARCHAR(2)
+);
 
 
 
